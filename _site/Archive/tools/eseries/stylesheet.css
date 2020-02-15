@@ -1,0 +1,78 @@
+
+body {
+    text-align: left;
+    background-color: black;
+    color: lime;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lime;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid lime;
+    padding: 5px;
+
+
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lime;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid lime;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+img {
+    border-radius: 10px;
+}
+
+
+
+.results_display {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: lime;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px;
+}
+ 

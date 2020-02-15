@@ -1,0 +1,60 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+<body>
+
+    <div class="row">
+        <div class="column">
+            <h1>E-Series Calculator</h1>
+            <h3>This calculator is a BAMF</h3>
+            <form>
+                Desired Voltage Output: <input id="vout" type="number">V
+                <br>
+                Voltage Source: <input id="vin" type="number">V
+                <br>
+                Desired idle current: <input id="qcurrent_in" type="number">A
+                <br>
+                Equation: Vout = <input id="equation">
+                <br>
+                Desired E-series for resistors:
+                <select id="eseries">
+                    <option>E12</option>
+                    <option>E24</option>
+                    <option>E48</option>
+                    <option>E96</option>
+                    <option>E192</option>
+                </select>
+            </form>
+
+
+            <button onclick="COMPUTE()">COMPUTO-MATIC</button>
+
+            <p>
+                R1: 
+                <input id="R1" type="number" readonly>
+                <button onclick="copyToClip('R1')">Copy to Clipboard</button>
+                <br>
+                R2: 
+                <input id="R2" type="number" readonly>
+                <button onclick="copyToClip('R2')">Copy to Clipboard</button>
+                <br>
+                Quiescent Current (A):
+                <input id="qcurrent_out" type="number" readonly>
+                <button onclick="copyToClip('qcurrent_out')">Copy to Clipboard</button>
+                <br>
+            </p>
+
+
+        </div>
+
+        <div class="column">
+            <img onclick="basicVoltageDivider()" src="divider.png">
+            <p>Click image to fill in equation for above voltage divider</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="math.js"></script>
+</body>
+</html>
